@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Timeplot/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Timeplot from './components/Timeplot.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Timeplot
+  },
+  method : {
+    hoge : function(){
+      console.log("hoge")
+    }
   }
 }
 </script>
